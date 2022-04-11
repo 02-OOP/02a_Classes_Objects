@@ -12,16 +12,21 @@ public class App
     {
         Cat cat = new Cat("Grizabella", "white", 29);
 
-        output("Name: " + cat.name);
-        output("Fellfarbe: " + cat.furColor);
-        output("Alter: " + cat.age);        
+        output("Name: " + cat.getName());
+        output("Fellfarbe: " + cat.getFurColor());
+        output("Alter: " + cat.getAge());        
         output("----------------");
 
+       
         Cat cat1 = new Cat("Alonzo", "black", 35);
 
-        output("Name: " + cat1.name);
-        output("Fellfarbe: " + cat1.furColor);
-        output("Alter: " + cat1.age);        
+        //cat1.furColor = "grey"; // nicht mehr möglich
+        cat1.setFurColor("grey"); // über Setter
+     
+
+        output("Name: " + cat1.getName());
+        output("Fellfarbe: " + cat1.getFurColor());
+        output("Alter: " + cat1.getAge());        
         output("----------------");
 
 
