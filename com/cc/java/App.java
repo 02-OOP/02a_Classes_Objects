@@ -20,23 +20,18 @@ public class App
        
         Cat cat1 = new Cat("Alonzo", "black", 35);
 
-        //cat1.furColor = "grey"; // nicht mehr möglich
+        // cat1.furColor = "grey"; // nicht mehr möglich
         cat1.setFurColor("grey"); // über Setter
-     
 
         output("Name: " + cat1.getName());
         output("Fellfarbe: " + cat1.getFurColor());
         output("Alter: " + cat1.getAge());        
         output("----------------");
-
-
     }
-
-
 
     public static void output(String outputStr) 
     {
-        System.out.println(outputStr);
+         System.out.println(outputStr);
     }
 
 }

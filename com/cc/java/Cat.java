@@ -12,10 +12,13 @@ public class Cat {
         this.age = age;
     }
 
-
     // Schnittstelle
     public String getName() {
-       return name; 
+        if (hasPermission()) {
+            return name; 
+        } else {
+            return "No permission!"; 
+        }
     }
 
     public void setName(String name) {
@@ -34,9 +37,8 @@ public class Cat {
         return age;
     }
 
+    private boolean hasPermission() {
+        return true; // fake
+    }
 
-
-
-
-    
 }
